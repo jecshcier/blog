@@ -1,6 +1,6 @@
 ---
 layout: hello
-title: hexo
+title: hello, my blog.
 date: 2017-09-29 14:47:45
 tags:
 ---
