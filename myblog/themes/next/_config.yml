@@ -11,10 +11,10 @@ override: false
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /shayneC.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "shayneC"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -132,7 +132,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/shayneC.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -710,6 +710,15 @@ vendors:
   # https://github.com/ethantw/Han
   han:
 
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  githubID: jecshcier
+  repo: blog
+  ClientID: d9f02f136c4879f8b483
+  ClientSecret: 6ebef4a441eeeabf4b10ce4cfdcf941f7d4ef146
+  lazy: true
 
 # Assets
 css: css
