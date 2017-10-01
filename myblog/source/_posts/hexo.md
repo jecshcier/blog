@@ -2,7 +2,8 @@
 layout: hello
 title: hello, my blog.
 date: 2017-09-29 14:47:45
-tags:
+tags: 
+keywords: Hexo, Blog, GitHub
 ---
 
 ## 博客
@@ -15,6 +16,8 @@ tags:
 此刻我是承认的。
 
 但在这博客搭建完成之前没有。
+
+<!-- more -->
 
 我策划了相当宏伟的东西……想着自己写cms系统，自行设计DB自行搞定后台，自行设计ui，我要做一套为自己量身打造的**超级博客系统**！
 
