@@ -2,8 +2,9 @@
 layout: hello
 title: hello, my blog.
 date: 2017-09-29 14:47:45
-tags: 
+tags: [随笔]
 keywords: Hexo, Blog, GitHub
+categories: 扯淡
 ---
 
 ## 博客

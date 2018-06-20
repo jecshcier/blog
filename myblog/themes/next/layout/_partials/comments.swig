@@ -14,12 +14,26 @@
     {% elseif theme.vkontakte_api.enable and theme.vkontakte_api.comments %}
       <div id="vk_comments"></div>
     {% elseif theme.disqus.enable %}
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="disqus_proxy_thread"></div>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        window.disqusProxy = {
+          shortname: 'shaynec',
+          server: 'cshayne.cn',
+          port: 5509,
+          defaultAvatar: '/avatars/default-avatar.png',
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: '{{ page.path }}'
+        };
+        window.disqus_config = function () {
+          this.page.url = '{{ page.permalink }}';
+          this.page.identifier = '{{ page.path }}';
+        };
+        var s = document.createElement('script');
+        s.src = '/static/js/disqus-proxy.js';
+        s.async = true;
+        document.body.appendChild(s);
+      </script>
     {% elseif theme.hypercomments_id %}
       <div id="hypercomments_widget"></div>
     {% elseif theme.youyan_uid %}
